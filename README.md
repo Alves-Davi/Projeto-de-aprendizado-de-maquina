@@ -43,18 +43,6 @@ O conjunto de dados contém milhares de URLs acompanhadas por diversas caracter�
 
 ---
 
-## Estrutura do Projeto
-
-```text
-Projeto/
-
-├── Projeto.ipynb
-├── README.md
-└── (demais arquivos do projeto)
-```
-
----
-
 ## Como Executar
 
 1. Abra o notebook no Google Colab.
