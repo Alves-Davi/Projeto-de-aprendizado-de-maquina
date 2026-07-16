@@ -1,43 +1,180 @@
-# Detecção de URLs de Phishing utilizando Aprendizado de Máquina
+# Detecção de URLs de Phishing com Aprendizado de Máquina
 
-## Projeto Final – Aprendizado de Máquina
+Projeto desenvolvido para a disciplina de **Aprendizado de Máquina**, com o objetivo de comparar diferentes algoritmos de classificação na detecção de URLs de phishing.
 
-**Integrantes**
+## Integrantes
 
-- Davi Alves Matos
-- Nathan Alejandro Pereira Soares Ramirez
-- Rafel Gomes Bonfim Lédo
+- Nome do Integrante 1
+- Nome do Integrante 2
+- Nome do Integrante 3
 
 ---
 
 ## Objetivo
 
-O objetivo deste trabalho é desenvolver modelos de aprendizado de máquina capazes de classificar URLs como legítimas ou maliciosas (phishing), utilizando características extraídas das páginas e das próprias URLs.
+Desenvolver e avaliar modelos de aprendizado de máquina capazes de classificar URLs como **legítimas** ou **maliciosas (phishing)** a partir de características extraídas das páginas e das próprias URLs.
 
-Serão comparados diferentes algoritmos de classificação estudados durante a disciplina, avaliando seu desempenho através de métricas apropriadas.
-
----
-
-## Fonte dos Dados
-
-PhiUSIIL Phishing URL Dataset
+Foram comparados diferentes algoritmos de classificação, utilizando métricas de desempenho para selecionar o modelo mais adequado.
 
 ---
 
-## Atributo-alvo
+## Dataset
 
-**label**
+**Nome:** PhiUSIIL Phishing URL (Website)
+
+**Fonte:** UCI Machine Learning Repository
+
+https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+website
+
+O conjunto de dados contém milhares de URLs acompanhadas por diversas características relacionadas ao domínio, conteúdo da página e propriedades da URL, além do atributo alvo (`label`), utilizado para indicar se uma URL é legítima ou de phishing.
 
 ---
 
-## Atributos preditivos
+## Tecnologias Utilizadas
 
-Todos os demais atributos do conjunto de dados, exceto o atributo alvo.
+- Python 3
+- Google Colab
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- UCI ML Repository (`ucimlrepo`)
 
 ---
 
-## Tipo da tarefa
+## Estrutura do Projeto
 
-Classificação
+```text
+Projeto/
 
-O atributo "label" representa categorias (URL legítima ou phishing), portanto o problema é de classificação supervisionada.
+├── Projeto.ipynb
+├── README.md
+└── (demais arquivos do projeto)
+```
+
+---
+
+## Como Executar
+
+1. Abra o notebook no Google Colab.
+
+2. Execute a célula responsável pela instalação da biblioteca:
+
+```python
+!pip install ucimlrepo
+```
+
+3. Execute todas as células do notebook na ordem em que aparecem.
+
+O dataset será carregado automaticamente a partir do repositório oficial da UCI Machine Learning Repository.
+
+---
+
+## Etapas Desenvolvidas
+
+- Compreensão dos Dados
+- Análise Exploratória (EDA)
+- Pré-processamento utilizando Pipeline
+- Separação entre treino e teste
+- Validação Cruzada
+- Treinamento dos modelos
+- Avaliação dos resultados
+- Discussão dos resultados
+
+---
+
+## Modelos Avaliados
+
+- DummyClassifier (Baseline)
+- SGDClassifier
+- Random Forest Classifier
+
+---
+
+## Métricas Utilizadas
+
+- Acurácia
+- Precisão
+- Recall
+- F1-Score
+- Matriz de Confusão
+
+---
+
+## Resultados
+
+Os modelos de aprendizado de máquina apresentaram desempenho significativamente superior ao modelo baseline.
+
+| Modelo | Acurácia Média |
+|---------|---------------:|
+| Baseline | 57,19% |
+| SGDClassifier | 99,98% |
+| Random Forest | **99,99%** |
+
+O Random Forest apresentou o melhor desempenho e foi selecionado como modelo final.
+
+Na avaliação utilizando o conjunto de teste foram obtidos:
+
+- **Acurácia:** 99,99%
+- **Precisão:** 99,99%
+- **Recall:** 99,99%
+- **F1-Score:** 99,99%
+
+A matriz de confusão mostrou apenas cinco classificações incorretas em mais de 47 mil exemplos avaliados.
+
+---
+
+## Principais Bibliotecas
+
+```python
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+ucimlrepo
+```
+
+---
+
+## Contribuição dos Integrantes
+
+| Integrante | Atividades |
+|------------|------------|
+| Nome 1 | Compreensão dos dados e análise exploratória |
+| Nome 2 | Pré-processamento e treinamento dos modelos |
+| Nome 3 | Avaliação dos modelos, documentação e apresentação |
+
+*(Atualize a tabela conforme a participação real de cada integrante.)*
+
+---
+
+## Vídeo de Apresentação
+
+Link para o vídeo:
+
+**(Inserir link do vídeo aqui)**
+
+---
+
+## Uso de Inteligência Artificial
+
+Durante o desenvolvimento deste projeto foi utilizada a ferramenta **ChatGPT** como apoio para:
+
+- organização da estrutura do notebook;
+- esclarecimento de dúvidas sobre a biblioteca Scikit-Learn;
+- revisão do código;
+- auxílio na documentação do projeto.
+
+Todo o código, análises e resultados foram executados, revisados e validados pelos integrantes do grupo.
+
+---
+
+## Referências
+
+- PRASAD, A.; CHANDRA, S. *PhiUSIIL Phishing URL Dataset*. UCI Machine Learning Repository, 2024.
+
+- Pedregosa, F. et al. *Scikit-learn: Machine Learning in Python*. Journal of Machine Learning Research, 2011.
+
+- Scikit-Learn Documentation: https://scikit-learn.org/
