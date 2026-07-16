@@ -1,12 +1,12 @@
 # Detecção de URLs de Phishing com Aprendizado de Máquina
 
-Projeto desenvolvido para a disciplina de **Aprendizado de Máquina**, com o objetivo de comparar diferentes algoritmos de classificação na detecção de URLs de phishing.
+Projeto desenvolvido para a disciplina de **Fundamentos da inteligência artificial**, com o objetivo de comparar diferentes algoritmos de classificação na detecção de URLs de phishing.
 
 ## Integrantes
 
-- Nome do Integrante 1
-- Nome do Integrante 2
-- Nome do Integrante 3
+- Davi Alves Matos
+- Nathan Alejandro Pereira Soarez Ramirez
+- Rafael Gomes Bonfim Lédo
 
 ---
 
