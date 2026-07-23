@@ -130,11 +130,9 @@ ucimlrepo
 
 | Integrante | Atividades |
 |------------|------------|
-| Nome 1 | Compreensão dos dados e análise exploratória |
-| Nome 2 | Pré-processamento e treinamento dos modelos |
-| Nome 3 | Avaliação dos modelos, documentação e apresentação |
-
-*(Atualize a tabela conforme a participação real de cada integrante.)*
+| Nathan Alejandro Pereira Soarez Ramirez | Compreensão dos dados e análise exploratória |
+| Davi Alves Matos | Pré-processamento e treinamento dos modelos |
+| Rafael Gomes Bonfim Lédo | Avaliação dos modelos e discussão dos resultados |
 
 ---
 
